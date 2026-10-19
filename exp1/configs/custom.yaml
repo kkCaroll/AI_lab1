@@ -18,5 +18,5 @@ custom:
     - k_proj
     - v_proj
     - o_proj
-  kl_weight: null         # 扫描范围 0.05、0.2 与 0.8，选后回填
+  kl_weight: 1.6          # 五档扫描后定于 1.6，依据见 PLAN/04-M4方案.md 第五节
   kl_chunk: 128           # 散度沿序列维的分块宽度

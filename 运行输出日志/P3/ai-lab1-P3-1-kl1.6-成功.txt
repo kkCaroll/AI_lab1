@@ -1,0 +1,277 @@
+2026-10-19T22:04:12.342525493+08:00 dlcwgdbt7sasj4hv-master-0 pytorch INFO: Try to dump ENV REQUIREMENTS_TEXT to /tmp/requirements.txt.
+2026-10-19T22:04:12.342660828+08:00 dlcwgdbt7sasj4hv-master-0 pytorch INFO: Try to install requirements from /tmp/requirements.txt.
+2026-10-19T22:04:13.022666924+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Looking in indexes: http://mirrors.cloud.aliyuncs.com/pypi/simple/
+2026-10-19T22:04:13.182651201+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting transformers
+2026-10-19T22:04:13.189765293+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/ae/ba/057af605774c3c7a9228ce61d88040749134ef320426403b31bb73755d43/transformers-5.20.1-py3-none-any.whl (12.8 MB)
+2026-10-19T22:04:13.437262955+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 64.9 MB/s eta 0:00:00
+2026-10-19T22:04:13.513765663+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting peft
+2026-10-19T22:04:13.52253888+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/70/0b/59441cdbfdd342ed03c08af90a2fe16173f0cd48ab219f523b39ca059a79/peft-0.21.2-py3-none-any.whl (835 kB)
+2026-10-19T22:04:13.533608073+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 835.4/835.4 kB 92.7 MB/s eta 0:00:00
+2026-10-19T22:04:13.607613128+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting datasets
+2026-10-19T22:04:13.61372667+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/24/cc/7f624629846c709ef1c68aa61bfb8d0ae2638cbe265104a1c2f7a630949e/datasets-5.1.0-py3-none-any.whl (604 kB)
+2026-10-19T22:04:13.620141205+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 604.4/604.4 kB 137.8 MB/s eta 0:00:00
+2026-10-19T22:04:13.680426979+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting accelerate
+2026-10-19T22:04:13.688545587+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/8a/4c/34f0450479d01195027260da68d8a3880683f1640c3ca5adf64acb3185f1/accelerate-1.15.0-py3-none-any.whl (394 kB)
+2026-10-19T22:04:13.694300501+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.3/394.3 kB 106.5 MB/s eta 0:00:00
+2026-10-19T22:04:14.038665902+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting pyyaml>=5.1
+2026-10-19T22:04:14.065222702+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/7a/1e/7acc4f0e74c4b3d9531e24739e0ab832a5edf40e64fbae1a9c01941cabd7/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+2026-10-19T22:04:14.076178027+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 87.3 MB/s eta 0:00:00
+2026-10-19T22:04:15.455547109+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting regex>=2025.10.22
+2026-10-19T22:04:15.48749121+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/ec/99/eae371ca63f7ea1f1eac025021527adb57ce3a4b67ff608b896fd31ea447/regex-2026.9.29-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (797 kB)
+2026-10-19T22:04:15.514283496+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 797.6/797.6 kB 32.1 MB/s eta 0:00:00
+2026-10-19T22:04:15.517132445+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/site-packages (from transformers->-r /tmp/requirements.txt (line 1)) (2.1.2)
+2026-10-19T22:04:15.60368615+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting tqdm>=4.60
+2026-10-19T22:04:15.610233904+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+2026-10-19T22:04:15.614459449+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 31.8 MB/s eta 0:00:00
+2026-10-19T22:04:15.654342645+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting packaging>=20.0
+2026-10-19T22:04:15.66032624+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-19T22:04:15.664943803+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 45.9 MB/s eta 0:00:00
+2026-10-19T22:04:16.120307285+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting tokenizers<0.24.0,>=0.23.1
+2026-10-19T22:04:16.126694678+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/3a/40/6706b82693715581457c6d5423eaa7faae576bb0526c5738a57085eb4449/tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+2026-10-19T22:04:16.163206675+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 98.5 MB/s eta 0:00:00
+2026-10-19T22:04:16.226494471+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting typer
+2026-10-19T22:04:16.233168684+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/07/ea/2e31b67051e91a133189e9c000c222502ddc6969856416de0d095de4c0b0/typer-0.27.3-py3-none-any.whl (123 kB)
+2026-10-19T22:04:16.237937942+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.3/123.3 kB 42.1 MB/s eta 0:00:00
+2026-10-19T22:04:16.633814913+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting safetensors>=0.8.0
+2026-10-19T22:04:16.640545559+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/28/50/f203ff3a3ddfe19308efc83c5a3a29ed02bf786732ec35e68bf9162f3365/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+2026-10-19T22:04:16.650165102+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 kB 68.6 MB/s eta 0:00:00
+2026-10-19T22:04:16.811743129+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting huggingface-hub<3.0,>=1.31.0
+2026-10-19T22:04:16.818255327+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/eb/b0/0f7b430fd100b3a3b037fdbb314878200241082e607b3383c63d91a13a72/huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+2026-10-19T22:04:16.828688316+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 100.5 MB/s eta 0:00:00
+2026-10-19T22:04:17.120315657+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting psutil
+2026-10-19T22:04:17.127322731+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+2026-10-19T22:04:17.132442326+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.6/155.6 kB 51.4 MB/s eta 0:00:00
+2026-10-19T22:04:17.134587341+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.10/site-packages (from peft->-r /tmp/requirements.txt (line 2)) (2.6.0+cu126)
+2026-10-19T22:04:17.300440158+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting dill<0.4.2,>=0.3.0
+2026-10-19T22:04:17.306666293+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/1e/77/dc8c558f7593132cf8fefec57c4f60c83b16941c574ac5f619abb3ae7933/dill-0.4.1-py3-none-any.whl (120 kB)
+2026-10-19T22:04:17.312258359+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.0/120.0 kB 32.3 MB/s eta 0:00:00
+2026-10-19T22:04:17.361080409+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting multiprocess<0.70.20
+2026-10-19T22:04:17.368647877+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/e3/45/8004d1e6b9185c1a444d6b55ac5682acf9d98035e54386d967366035a03a/multiprocess-0.70.19-py310-none-any.whl (134 kB)
+2026-10-19T22:04:17.373452155+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 48.2 MB/s eta 0:00:00
+2026-10-19T22:04:17.921836166+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting xxhash
+2026-10-19T22:04:17.930195121+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/f3/66/6f6fdd7fae8161edeb927b8050e90949931faadf105509d9a1c5d9ccfd00/xxhash-4.0.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (249 kB)
+2026-10-19T22:04:17.939426548+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.5/249.5 kB 33.9 MB/s eta 0:00:00
+2026-10-19T22:04:18.212462294+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting pyarrow>=24.0.0
+2026-10-19T22:04:18.218916552+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/57/5c/f8fc0eb2de03464a557d5a4d0c15e972d73362414696618833b771f7eddd/pyarrow-25.0.1-cp310-cp310-manylinux_2_28_x86_64.whl (50.1 MB)
+2026-10-19T22:04:18.57627987+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 49.4 MB/s eta 0:00:00
+2026-10-19T22:04:18.635327585+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: filelock in /usr/local/lib/python3.10/site-packages (from datasets->-r /tmp/requirements.txt (line 3)) (3.19.1)
+2026-10-19T22:04:18.636229947+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: fsspec[http]<=2026.7.0,>=2023.1.0 in /usr/local/lib/python3.10/site-packages (from datasets->-r /tmp/requirements.txt (line 3)) (2025.9.0)
+2026-10-19T22:04:19.058629666+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting pandas
+2026-10-19T22:04:19.065325526+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/40/a8/4dac1f8f8235e5d25b9955d02ff6f29396191d4e665d71122c3722ca83c5/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+2026-10-19T22:04:19.156481106+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 131.9 MB/s eta 0:00:00
+2026-10-19T22:04:21.177679694+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting aiohttp!=4.0.0a0,!=4.0.0a1
+2026-10-19T22:04:21.187001524+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/5d/38/01f5fc732d5373d6c099db0343279cd4e6607287d336bab6ff6ae9085a0d/aiohttp-3.14.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+2026-10-19T22:04:21.219610036+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 60.5 MB/s eta 0:00:00
+2026-10-19T22:04:21.389693294+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting tomli>=1.1.0
+2026-10-19T22:04:21.397545107+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/60/3f/3e3f8fd0919249b0200c80fbc4f9a1e70be19f9883da71dfb7f8b9ab8aca/tomli-2.5.0-py3-none-any.whl (14 kB)
+2026-10-19T22:04:21.436215297+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting httpx2<3,>=2.0.0
+2026-10-19T22:04:21.442348312+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/69/5a/469616aa8c2cbb0bb9dd67a3c18d07c01ab604cc0b236ee1c47d260c7f6e/httpx2-2.14.0-py3-none-any.whl (96 kB)
+2026-10-19T22:04:21.446714894+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.9/96.9 kB 38.1 MB/s eta 0:00:00
+2026-10-19T22:04:21.463043665+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.10/site-packages (from huggingface-hub<3.0,>=1.31.0->transformers->-r /tmp/requirements.txt (line 1)) (4.15.0)
+2026-10-19T22:04:21.596574992+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting hf-xet<2.0.0,>=1.6.0
+2026-10-19T22:04:21.603191709+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+2026-10-19T22:04:21.626736476+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 198.3 MB/s eta 0:00:00
+2026-10-19T22:04:21.670194532+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting click<9.0.0,>=8.4.2
+2026-10-19T22:04:21.676230588+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl (125 kB)
+2026-10-19T22:04:21.681653327+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 34.9 MB/s eta 0:00:00
+2026-10-19T22:04:21.793433481+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (11.3.0.4)
+2026-10-19T22:04:21.794800799+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.5.4.2)
+2026-10-19T22:04:21.795955725+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cudnn-cu12==9.5.1.17 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (9.5.1.17)
+2026-10-19T22:04:21.797375788+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.77)
+2026-10-19T22:04:21.798705919+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (2.21.5)
+2026-10-19T22:04:21.800288299+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.77)
+2026-10-19T22:04:21.801464178+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.4.1)
+2026-10-19T22:04:21.802817448+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.80)
+2026-10-19T22:04:21.804150068+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (10.3.7.77)
+2026-10-19T22:04:21.805273493+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (11.7.1.2)
+2026-10-19T22:04:21.805611089+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: networkx in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (3.3)
+2026-10-19T22:04:21.806983964+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-cusparselt-cu12==0.6.3 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (0.6.3)
+2026-10-19T22:04:21.808481004+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.77)
+2026-10-19T22:04:21.809552139+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: triton==3.2.0 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (3.2.0)
+2026-10-19T22:04:21.810957619+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (1.13.1)
+2026-10-19T22:04:21.811273118+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (3.1.3)
+2026-10-19T22:04:21.81261645+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.85)
+2026-10-19T22:04:21.849623833+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.10/site-packages (from sympy==1.13.1->torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (1.3.0)
+2026-10-19T22:04:22.025150981+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting pytz>=2020.1
+2026-10-19T22:04:22.03139143+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/4f/ef/c66110d46fb800dda0bf33164182dfadabe26a90e4476844d502a23dca8e/pytz-2026.5-py2.py3-none-any.whl (506 kB)
+2026-10-19T22:04:22.03704001+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 506.3/506.3 kB 135.7 MB/s eta 0:00:00
+2026-10-19T22:04:22.068143115+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting tzdata>=2022.7
+2026-10-19T22:04:22.073781244+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+2026-10-19T22:04:22.079116137+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.0/348.0 kB 100.9 MB/s eta 0:00:00
+2026-10-19T22:04:22.106721499+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting python-dateutil>=2.8.2
+2026-10-19T22:04:22.11233757+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-10-19T22:04:22.116896722+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 83.2 MB/s eta 0:00:00
+2026-10-19T22:04:22.257392975+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting rich>=13.8.0
+2026-10-19T22:04:22.263028779+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl (310 kB)
+2026-10-19T22:04:22.268050271+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 96.0 MB/s eta 0:00:00
+2026-10-19T22:04:22.283914733+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting annotated-doc>=0.0.2
+2026-10-19T22:04:22.289292271+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+2026-10-19T22:04:22.324457146+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting shellingham>=1.3.0
+2026-10-19T22:04:22.329777469+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-10-19T22:04:23.150486345+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting yarl<2.0,>=1.25.1
+2026-10-19T22:04:23.157705972+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/28/b9/7818ac6dec7fbcd16be2d19495807c01e2c38834e57d41c63356a75e786b/yarl-1.25.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (118 kB)
+2026-10-19T22:04:23.161903919+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 kB 48.7 MB/s eta 0:00:00
+2026-10-19T22:04:23.448339925+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting propcache>=0.2.0
+2026-10-19T22:04:23.455668593+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/f0/51/5adee15e12a7e314cece4543fbf295b0fe1b504dc78b32dff4c8eb1e29b0/propcache-0.5.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (224 kB)
+2026-10-19T22:04:23.463738123+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.3/224.3 kB 35.4 MB/s eta 0:00:00
+2026-10-19T22:04:23.488337415+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting aiosignal>=1.4.0
+2026-10-19T22:04:23.494327155+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+2026-10-19T22:04:24.294190263+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting multidict<8.0,>=4.5
+2026-10-19T22:04:24.302128498+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/5a/9c/598d765e98aa02ff7204b6f11cf790e5840f5e8252d7b1d955ed0043bb94/multidict-7.1.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (464 kB)
+2026-10-19T22:04:24.314930347+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 464.4/464.4 kB 42.5 MB/s eta 0:00:00
+2026-10-19T22:04:24.344341256+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting attrs>=17.3.0
+2026-10-19T22:04:24.349854785+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl (67 kB)
+2026-10-19T22:04:24.35350959+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 29.4 MB/s eta 0:00:00
+2026-10-19T22:04:24.547789088+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting frozenlist>=1.1.1
+2026-10-19T22:04:24.555027728+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/5d/ed/c7895fd2fde7f3ee70d248175f9b6cdf792fb741ab92dc59cd9ef3bd241b/frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+2026-10-19T22:04:24.560233724+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.5/219.5 kB 67.6 MB/s eta 0:00:00
+2026-10-19T22:04:24.601384066+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting aiohappyeyeballs>=2.5.0
+2026-10-19T22:04:24.606749454+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+2026-10-19T22:04:24.638466421+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting async-timeout<6.0,>=4.0
+2026-10-19T22:04:24.643813464+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/fe/ba/e2081de779ca30d473f21f5b30e0e737c438205440784c7dfc81efc2b029/async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+2026-10-19T22:04:24.703447005+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting idna>=3.18
+2026-10-19T22:04:24.709001807+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl (69 kB)
+2026-10-19T22:04:24.712750305+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 30.7 MB/s eta 0:00:00
+2026-10-19T22:04:24.749190886+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting httpcore2==2.14.0
+2026-10-19T22:04:24.754762024+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/02/06/a8d6a8f90d11b76d9086242b6bb0ee4b503473bfc8be34c2d5b067275c22/httpcore2-2.14.0-py3-none-any.whl (84 kB)
+2026-10-19T22:04:24.758389229+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.3/84.3 kB 38.2 MB/s eta 0:00:00
+2026-10-19T22:04:24.806019848+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting anyio>=4.10
+2026-10-19T22:04:24.811397401+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl (132 kB)
+2026-10-19T22:04:24.815449208+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 55.0 MB/s eta 0:00:00
+2026-10-19T22:04:24.841775094+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting truststore>=0.10
+2026-10-19T22:04:24.847534769+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl (19 kB)
+2026-10-19T22:04:24.88391461+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting h11>=0.16
+2026-10-19T22:04:24.88928829+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl (37 kB)
+2026-10-19T22:04:24.917488454+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting six>=1.5
+2026-10-19T22:04:24.92283609+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-10-19T22:04:24.974470347+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting pygments<3.0.0,>=2.13.0
+2026-10-19T22:04:24.980011186+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-10-19T22:04:24.991647201+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 125.7 MB/s eta 0:00:00
+2026-10-19T22:04:25.034452888+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting markdown-it-py>=2.2.0
+2026-10-19T22:04:25.040039808+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-10-19T22:04:25.043850054+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 39.0 MB/s eta 0:00:00
+2026-10-19T22:04:25.067122568+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/site-packages (from jinja2->torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (2.1.5)
+2026-10-19T22:04:25.139288379+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting typing-extensions>=4.1.0
+2026-10-19T22:04:25.144765173+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-10-19T22:04:25.148249333+08:00 dlcwgdbt7sasj4hv-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 20.4 MB/s eta 0:00:00
+2026-10-19T22:04:25.186310711+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting exceptiongroup>=1.0.2
+2026-10-19T22:04:25.192507119+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/8a/0e/97c33bf5009bdbac74fd2beace167cab3f978feb69cc36f1ef79360d6c4e/exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+2026-10-19T22:04:25.272400981+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Collecting mdurl~=0.1
+2026-10-19T22:04:25.277814517+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-10-19T22:04:26.165635501+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Installing collected packages: pytz, xxhash, tzdata, typing-extensions, truststore, tqdm, tomli, six, shellingham, safetensors, regex, pyyaml, pygments, pyarrow, psutil, propcache, packaging, mdurl, idna, hf-xet, h11, frozenlist, dill, click, attrs, async-timeout, annotated-doc, aiohappyeyeballs, python-dateutil, multiprocess, multidict, markdown-it-py, httpcore2, exceptiongroup, aiosignal, yarl, rich, pandas, anyio, typer, httpx2, aiohttp, huggingface-hub, tokenizers, datasets, accelerate, transformers, peft
+2026-10-19T22:04:26.346458643+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Attempting uninstall: typing-extensions
+2026-10-19T22:04:26.347031757+08:00 dlcwgdbt7sasj4hv-master-0 pytorch     Found existing installation: typing_extensions 4.15.0
+2026-10-19T22:04:26.349671507+08:00 dlcwgdbt7sasj4hv-master-0 pytorch     Uninstalling typing_extensions-4.15.0:
+2026-10-19T22:04:26.894528839+08:00 dlcwgdbt7sasj4hv-master-0 pytorch       Successfully uninstalled typing_extensions-4.15.0
+2026-10-19T22:04:28.96438655+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   Attempting uninstall: idna
+2026-10-19T22:04:28.965033133+08:00 dlcwgdbt7sasj4hv-master-0 pytorch     Found existing installation: idna 3.11
+2026-10-19T22:04:28.968035398+08:00 dlcwgdbt7sasj4hv-master-0 pytorch     Uninstalling idna-3.11:
+2026-10-19T22:04:28.968788873+08:00 dlcwgdbt7sasj4hv-master-0 pytorch       Successfully uninstalled idna-3.11
+2026-10-19T22:04:40.992065539+08:00 dlcwgdbt7sasj4hv-master-0 pytorch Successfully installed accelerate-1.15.0 aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 annotated-doc-0.0.5 anyio-4.15.1 async-timeout-5.0.1 attrs-26.1.0 click-8.5.0 datasets-5.1.0 dill-0.4.1 exceptiongroup-1.3.1 frozenlist-1.8.0 h11-0.16.0 hf-xet-1.7.0 httpcore2-2.14.0 httpx2-2.14.0 huggingface-hub-2.2.0 idna-3.20 markdown-it-py-4.2.0 mdurl-0.1.2 multidict-7.1.0 multiprocess-0.70.19 packaging-26.3 pandas-2.3.3 peft-0.21.2 propcache-0.5.4 psutil-7.2.2 pyarrow-25.0.1 pygments-2.21.0 python-dateutil-2.9.0.post0 pytz-2026.5 pyyaml-6.0.3 regex-2026.9.29 rich-15.0.0 safetensors-0.8.0 shellingham-1.5.4 six-1.17.0 tokenizers-0.23.3 tomli-2.5.0 tqdm-4.70.1 transformers-5.20.1 truststore-0.10.5 typer-0.27.3 typing-extensions-4.16.0 tzdata-2026.5 xxhash-4.0.2 yarl-1.25.1
+2026-10-19T22:04:40.992298667+08:00 dlcwgdbt7sasj4hv-master-0 pytorch WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-10-19T22:04:41.080049857+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:04:41.080063091+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [notice] A new release of pip is available: 23.0.1 -> 26.2.1
+2026-10-19T22:04:41.080065002+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [notice] To update, run: pip install --upgrade pip
+2026-10-19T22:04:41.700827806+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 评测命令 python -m src.eval --model-path /mnt/data/exp1/models/Qwen3-0.6B --data-dir /mnt/data/exp1/data/raw --output-dir /mnt/data/exp1/runs/P3-3/M4-eval --dataset gsm8k,arc --adapter /mnt/data/exp1/runs/P3-1/kl1.6/train/epoch-3 
+2026-10-19T22:04:44.360128203+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:04:44.360148332+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 环境 =====
+2026-10-19T22:04:44.360151574+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   设备 cuda  精度 torch.bfloat16  种子 42
+Loading weights:  76%|███████▌  | 237/311 [00:05<00:02, 36.52it/s]
+Loading weights:  75%|███████▍  | 232/311 [00:05<00:02, 37.28it/s]
+Loading weights:  73%|███████▎  | 226/311 [00:05<00:02, 39.53it/s]
+Loading weights:  69%|██████▉   | 216/311 [00:04<00:02, 31.74it/s]
+Loading weights:  68%|██████▊   | 210/311 [00:04<00:02, 45.72it/s]
+Loading weights:  65%|██████▌   | 203/311 [00:04<00:02, 43.45it/s]
+Loading weights:  61%|██████    | 189/311 [00:04<00:05, 24.27it/s]
+Loading weights:  59%|█████▉    | 185/311 [00:03<00:03, 31.82it/s]
+Loading weights:  58%|█████▊    | 181/311 [00:03<00:04, 31.17it/s]
+Loading weights:  57%|█████▋    | 176/311 [00:03<00:03, 38.37it/s]
+Loading weights:  55%|█████▍    | 171/311 [00:03<00:03, 37.81it/s]
+Loading weights:  53%|█████▎    | 165/311 [00:03<00:03, 38.83it/s]
+Loading weights:  51%|█████     | 158/311 [00:03<00:03, 43.12it/s]
+Loading weights:  49%|████▉     | 152/311 [00:02<00:03, 46.21it/s]
+Loading weights:  45%|████▌     | 140/311 [00:02<00:04, 39.76it/s]
+Loading weights:  41%|████▏     | 129/311 [00:02<00:04, 42.84it/s]
+Loading weights:  39%|███▉      | 122/311 [00:02<00:03, 58.74it/s]
+Loading weights:  37%|███▋      | 115/311 [00:01<00:03, 59.14it/s]
+Loading weights:  34%|███▍      | 107/311 [00:01<00:03, 62.79it/s]
+Loading weights:  28%|██▊       | 87/311 [00:01<00:05, 44.13it/s]
+Loading weights:  26%|██▌       | 81/311 [00:01<00:04, 50.01it/s]
+Loading weights:  23%|██▎       | 73/311 [00:01<00:03, 79.15it/s] 
+Loading weights:  20%|██        | 63/311 [00:00<00:02, 106.94it/s]
+Loading weights:   5%|▌         | 17/311 [00:00<00:09, 31.56it/s]
+Loading weights:   4%|▍         | 13/311 [00:00<00:09, 31.81it/s]
+Loading weights:   2%|▏         | 6/311 [00:00<00:07, 40.20it/s]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+2026-10-19T22:04:57.380787314+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:05:05.003591263+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 模型加载  18.2 秒
+2026-10-19T22:05:05.003605811+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:05:05.003610443+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 数据集 gsm8k =====
+2026-10-19T22:05:05.198995722+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 数据行数  1319，期望 1319
+2026-10-19T22:05:05.199083648+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 标准答案完整  缺失 0 条
+2026-10-19T22:05:05.199182711+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   标准答案去重 353 种
+2026-10-19T22:05:05.50755344+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   提示长度 最长 224，均值 97.3 token
+2026-10-19T22:05:05.507574079+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   提示校验和 e3be7afa40b4fa52  模板指纹 391a0ffc735091ce
+2026-10-19T22:05:05.507576017+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:05:05.507578023+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 推理 =====
+2026-10-19T22:05:05.507582303+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   设备 cuda  精度 torch.bfloat16  批大小 32  生成上限 512
+2026-10-19T22:05:05.507583429+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   模型加载 18.2 秒
+2026-10-19T22:05:17.565972981+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 1  已完成 32/1319  已用 12.1 秒  预计剩余 8.1 分
+2026-10-19T22:06:03.319840206+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 5  已完成 160/1319  已用 57.8 秒  预计剩余 7.0 分
+2026-10-19T22:07:26.176555031+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 10  已完成 320/1319  已用 140.7 秒  预计剩余 7.3 分
+2026-10-19T22:08:38.056699228+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 15  已完成 480/1319  已用 212.5 秒  预计剩余 6.2 分
+2026-10-19T22:10:10.713239798+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 20  已完成 640/1319  已用 305.2 秒  预计剩余 5.4 分
+2026-10-19T22:11:45.266220941+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 25  已完成 800/1319  已用 399.8 秒  预计剩余 4.3 分
+2026-10-19T22:13:18.811835619+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 30  已完成 960/1319  已用 493.3 秒  预计剩余 3.1 分
+2026-10-19T22:14:52.868601545+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 35  已完成 1120/1319  已用 587.4 秒  预计剩余 1.7 分
+2026-10-19T22:16:36.697483894+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 40  已完成 1280/1319  已用 691.2 秒  预计剩余 0.4 分
+2026-10-19T22:17:16.338178539+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 42  已完成 1319/1319  已用 730.8 秒  预计剩余 0.0 分
+2026-10-19T22:17:16.397734872+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   生成 730.8 秒  批次 42  显存峰值 3.57 GiB
+2026-10-19T22:17:16.39833247+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:17:16.398336655+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 结果 =====
+2026-10-19T22:17:16.398341757+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   准确率 0.5648  正确 745/1319
+2026-10-19T22:17:16.398345735+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   规则命中 {'cue': 264, 'marker': 1039, 'tail-number': 16}
+2026-10-19T22:17:16.398353166+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   标记命中率 0.7877
+2026-10-19T22:17:16.398357447+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 抽取失败率  0.0000，0 条
+2026-10-19T22:17:16.398360491+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 截断率  0.0159
+2026-10-19T22:17:16.398524908+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 预测逐条对齐  1319 条，期望 1319 条
+2026-10-19T22:17:16.39852707+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:17:16.398529214+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 样例 =====
+2026-10-19T22:17:16.398531266+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   无抽取失败或降级的样本
+2026-10-19T22:17:17.601992917+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:17:17.602008437+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   产物已写出至 /mnt/data/exp1/runs/P3-3/M4-eval
+2026-10-19T22:17:17.736332825+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:17:17.736338123+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 数据集 arc =====
+2026-10-19T22:17:17.80552485+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 数据行数  1172，期望 1172
+2026-10-19T22:17:17.805620876+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 标准答案完整  缺失 0 条
+2026-10-19T22:17:17.805746463+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   标签分布 {'1': 3, '2': 10, '3': 7, '4': 2, 'A': 263, 'B': 301, 'C': 303, 'D': 283}
+2026-10-19T22:17:18.073378182+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   提示长度 最长 217，均值 86.6 token
+2026-10-19T22:17:18.073399184+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   提示校验和 786ac4b930e0f805  模板指纹 391a0ffc735091ce
+2026-10-19T22:17:18.073400707+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:17:18.07341005+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 推理 =====
+2026-10-19T22:17:18.073412209+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   设备 cuda  精度 torch.bfloat16  批大小 64  生成上限 512
+2026-10-19T22:17:18.07341995+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   模型加载 18.2 秒
+2026-10-19T22:17:21.298327052+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 1  已完成 64/1172  已用 3.2 秒  预计剩余 0.9 分
+2026-10-19T22:17:33.538456254+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 5  已完成 320/1172  已用 15.5 秒  预计剩余 0.7 分
+2026-10-19T22:17:54.985118183+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 10  已完成 640/1172  已用 36.9 秒  预计剩余 0.5 分
+2026-10-19T22:18:22.489775328+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 15  已完成 960/1172  已用 64.4 秒  预计剩余 0.2 分
+2026-10-19T22:19:07.8501261+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   批 19  已完成 1172/1172  已用 109.8 秒  预计剩余 0.0 分
+2026-10-19T22:19:07.889392508+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   生成 109.8 秒  批次 19  显存峰值 3.94 GiB
+2026-10-19T22:19:07.890064228+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:19:07.890074618+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 结果 =====
+2026-10-19T22:19:07.890077646+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   准确率 0.5512  正确 646/1172
+2026-10-19T22:19:07.890084451+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   规则命中 {'answer-pattern': 211, 'bare-label': 1, 'body-anywhere': 5, 'failed': 1, 'leading-label': 42, 'option-text': 912}
+2026-10-19T22:19:07.890089908+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 抽取失败率  0.0009，1 条
+2026-10-19T22:19:07.890096921+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 截断率  0.0000
+2026-10-19T22:19:07.89032077+08:00 dlcwgdbt7sasj4hv-master-0 pytorch [OK] 预测逐条对齐  1172 条，期望 1172 条
+2026-10-19T22:19:07.890328848+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:19:07.890331894+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 样例 =====
+2026-10-19T22:19:07.890337506+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   [FAIL] Mercury_SC_LBS10664  标准答案 C
+2026-10-19T22:19:07.890340024+08:00 dlcwgdbt7sasj4hv-master-0 pytorch     输出 The option that is least likely to allow electricity to flow is **D. water**. Because water is a conductor of electricity, it can allow electricity to flow through it. The other options (aluminum, cop
+2026-10-19T22:19:07.890342316+08:00 dlcwgdbt7sasj4hv-master-0 pytorch     抽取 None  规则 failed
+2026-10-19T22:19:08.91454432+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:19:08.914549661+08:00 dlcwgdbt7sasj4hv-master-0 pytorch   产物已写出至 /mnt/data/exp1/runs/P3-3/M4-eval
+2026-10-19T22:19:08.964379133+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:19:08.964394693+08:00 dlcwgdbt7sasj4hv-master-0 pytorch ===== 汇总 =====
+2026-10-19T22:19:08.964400141+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 
+2026-10-19T22:19:08.964402491+08:00 dlcwgdbt7sasj4hv-master-0 pytorch 共计 11 项，OK 11，WARN 0，FAIL 0

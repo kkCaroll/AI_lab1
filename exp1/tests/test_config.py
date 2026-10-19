@@ -284,13 +284,19 @@ def test_real_config_files_load(method: str):
     assert merged["train"]["lr"] is not None
 
 
-def test_real_custom_config_loads_with_coefficient_unset():
-    """M4 的配置可载入，正则系数在扫描前留空，由装配处拦下而非核对处。"""
+def test_real_custom_config_loads_with_selected_coefficient():
+    """M4 的配置可载入，正则系数已按开发集扫描回填。"""
     module = __import__("src.methods.custom", fromlist=["CONFIG_SCHEMA", "resolve_weight"])
     merged = config.load(CONFIG_DIR / "custom.yaml")
     config.apply_method(merged, module.CONFIG_SCHEMA)
     config.check(merged)
     assert merged["method"] == "custom"
-    assert merged["custom"]["kl_weight"] is None
+    assert merged["custom"]["kl_weight"] == 1.6
+    assert module.resolve_weight(merged["custom"]) == 1.6
+
+
+def test_custom_coefficient_unset_is_rejected_at_build_time():
+    """系数留空时由装配处拦下而非核对处。"""
+    module = __import__("src.methods.custom", fromlist=["resolve_weight"])
     with pytest.raises(ValueError, match="kl_weight 未填"):
-        module.resolve_weight(merged["custom"])
+        module.resolve_weight({"kl_weight": None})
