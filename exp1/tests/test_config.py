@@ -284,10 +284,13 @@ def test_real_config_files_load(method: str):
     assert merged["train"]["lr"] is not None
 
 
-def test_real_custom_config_is_rejected():
-    """M4 的配置尚未定值，train.lr 留空须在核对处被拦下。"""
-    module = __import__("src.methods.custom", fromlist=["CONFIG_SCHEMA"])
+def test_real_custom_config_loads_with_coefficient_unset():
+    """M4 的配置可载入，正则系数在扫描前留空，由装配处拦下而非核对处。"""
+    module = __import__("src.methods.custom", fromlist=["CONFIG_SCHEMA", "resolve_weight"])
     merged = config.load(CONFIG_DIR / "custom.yaml")
     config.apply_method(merged, module.CONFIG_SCHEMA)
-    with pytest.raises(config.ConfigError, match="train.lr 未填"):
-        config.check(merged)
+    config.check(merged)
+    assert merged["method"] == "custom"
+    assert merged["custom"]["kl_weight"] is None
+    with pytest.raises(ValueError, match="kl_weight 未填"):
+        module.resolve_weight(merged["custom"])

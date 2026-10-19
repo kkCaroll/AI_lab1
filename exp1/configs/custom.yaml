@@ -1,11 +1,22 @@
-# M4 自研方法。方案于 P3.1 依 P2 结果确定，本文件先占位。
+# M4 自研方法。LoRA 旁路加基座输出上的 KL 正则，方案见 PLAN/04-M4方案.md。
 #
-# 方法段的键空间由 src/methods/custom.py 声明。方案的待选项见 PLAN/02 的 R6，
-# 限定为降低 LoRA rank 或可训练参数占比、以基座输出做 KL 正则、参数空间约束、
-# 早停四类，且不得使用 ARC-Challenge 数据。
+# 底座与 M2 逐项相同，两法只差正则项一处，故读数之差可直接归给该项。
+# kl_weight 由 P3 的开发集扫描定，置 null 时装配即报错，不使未定取值静默跑完。
 
 method: custom
 
 train:
-  lr: null                # 待 P3.1 定，置 null 时启动即报错，不使未填配置静默跑完
+  lr: 1.0e-4
   epochs: 3
+
+custom:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  kl_weight: null         # 扫描范围 0.05、0.2 与 0.8，选后回填
+  kl_chunk: 128           # 散度沿序列维的分块宽度
