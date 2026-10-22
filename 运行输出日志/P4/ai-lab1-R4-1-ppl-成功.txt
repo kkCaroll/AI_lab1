@@ -1,0 +1,305 @@
+2026-10-22T10:58:25.428247494+08:00 dlc14bhlajtm7p5j-master-0 pytorch INFO: Try to dump ENV REQUIREMENTS_TEXT to /tmp/requirements.txt.
+2026-10-22T10:58:25.428367961+08:00 dlc14bhlajtm7p5j-master-0 pytorch INFO: Try to install requirements from /tmp/requirements.txt.
+2026-10-22T10:58:25.942231808+08:00 dlc14bhlajtm7p5j-master-0 pytorch Looking in indexes: http://mirrors.cloud.aliyuncs.com/pypi/simple/
+2026-10-22T10:58:26.103721519+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting transformers
+2026-10-22T10:58:26.110626277+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/96/b6/724faefed06913dd3e42e0476fe2c42448675c42f687a12bf810aa098005/transformers-5.20.2-py3-none-any.whl (12.8 MB)
+2026-10-22T10:58:26.200964849+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 164.5 MB/s eta 0:00:00
+2026-10-22T10:58:26.279629267+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting peft
+2026-10-22T10:58:26.297689009+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/70/0b/59441cdbfdd342ed03c08af90a2fe16173f0cd48ab219f523b39ca059a79/peft-0.21.2-py3-none-any.whl (835 kB)
+2026-10-22T10:58:26.304506583+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 835.4/835.4 kB 169.8 MB/s eta 0:00:00
+2026-10-22T10:58:26.36875409+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting datasets
+2026-10-22T10:58:26.374653774+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/24/cc/7f624629846c709ef1c68aa61bfb8d0ae2638cbe265104a1c2f7a630949e/datasets-5.1.0-py3-none-any.whl (604 kB)
+2026-10-22T10:58:26.379987716+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 604.4/604.4 kB 170.7 MB/s eta 0:00:00
+2026-10-22T10:58:26.432904772+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting accelerate
+2026-10-22T10:58:26.438519531+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/8a/4c/34f0450479d01195027260da68d8a3880683f1640c3ca5adf64acb3185f1/accelerate-1.15.0-py3-none-any.whl (394 kB)
+2026-10-22T10:58:26.443021407+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 394.3/394.3 kB 141.7 MB/s eta 0:00:00
+2026-10-22T10:58:27.887708575+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting regex>=2025.10.22
+2026-10-22T10:58:27.894836124+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/ec/99/eae371ca63f7ea1f1eac025021527adb57ce3a4b67ff608b896fd31ea447/regex-2026.9.29-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (797 kB)
+2026-10-22T10:58:27.915246608+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 797.6/797.6 kB 42.9 MB/s eta 0:00:00
+2026-10-22T10:58:28.290170529+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting safetensors>=0.8.0
+2026-10-22T10:58:28.296426295+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/28/50/f203ff3a3ddfe19308efc83c5a3a29ed02bf786732ec35e68bf9162f3365/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+2026-10-22T10:58:28.304143656+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 kB 90.3 MB/s eta 0:00:00
+2026-10-22T10:58:28.408138657+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting pyyaml>=5.1
+2026-10-22T10:58:28.414846033+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/7a/1e/7acc4f0e74c4b3d9531e24739e0ab832a5edf40e64fbae1a9c01941cabd7/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+2026-10-22T10:58:28.421287757+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 177.3 MB/s eta 0:00:00
+2026-10-22T10:58:28.569162428+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting huggingface-hub<3.0,>=1.31.0
+2026-10-22T10:58:28.574851328+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/eb/b0/0f7b430fd100b3a3b037fdbb314878200241082e607b3383c63d91a13a72/huggingface_hub-2.2.0-py3-none-any.whl (839 kB)
+2026-10-22T10:58:28.581219143+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 839.9/839.9 kB 189.3 MB/s eta 0:00:00
+2026-10-22T10:58:28.641017318+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting typer
+2026-10-22T10:58:28.647013499+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/07/ea/2e31b67051e91a133189e9c000c222502ddc6969856416de0d095de4c0b0/typer-0.27.3-py3-none-any.whl (123 kB)
+2026-10-22T10:58:28.6507006+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.3/123.3 kB 60.4 MB/s eta 0:00:00
+2026-10-22T10:58:28.695004332+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting packaging>=20.0
+2026-10-22T10:58:28.700690354+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-22T10:58:28.704365328+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 65.2 MB/s eta 0:00:00
+2026-10-22T10:58:28.796363206+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting tqdm>=4.60
+2026-10-22T10:58:28.802219555+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+2026-10-22T10:58:28.805545319+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 41.8 MB/s eta 0:00:00
+2026-10-22T10:58:29.229225353+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting tokenizers<0.24.0,>=0.23.1
+2026-10-22T10:58:29.235365493+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/3a/40/6706b82693715581457c6d5423eaa7faae576bb0526c5738a57085eb4449/tokenizers-0.23.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.4 MB)
+2026-10-22T10:58:29.253968406+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 209.0 MB/s eta 0:00:00
+2026-10-22T10:58:29.259272982+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/site-packages (from transformers->-r /tmp/requirements.txt (line 1)) (2.1.2)
+2026-10-22T10:58:29.589407666+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting psutil
+2026-10-22T10:58:29.595715168+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+2026-10-22T10:58:29.600109441+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.6/155.6 kB 61.6 MB/s eta 0:00:00
+2026-10-22T10:58:29.608571114+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.10/site-packages (from peft->-r /tmp/requirements.txt (line 2)) (2.6.0+cu126)
+2026-10-22T10:58:30.090510781+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting pandas
+2026-10-22T10:58:30.097302587+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/40/a8/4dac1f8f8235e5d25b9955d02ff6f29396191d4e665d71122c3722ca83c5/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+2026-10-22T10:58:30.16598309+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 185.9 MB/s eta 0:00:00
+2026-10-22T10:58:30.240910292+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting multiprocess<0.70.20
+2026-10-22T10:58:30.268780292+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/e3/45/8004d1e6b9185c1a444d6b55ac5682acf9d98035e54386d967366035a03a/multiprocess-0.70.19-py310-none-any.whl (134 kB)
+2026-10-22T10:58:30.27277041+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 63.3 MB/s eta 0:00:00
+2026-10-22T10:58:30.89214429+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting xxhash
+2026-10-22T10:58:30.899151155+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/f3/66/6f6fdd7fae8161edeb927b8050e90949931faadf105509d9a1c5d9ccfd00/xxhash-4.0.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (249 kB)
+2026-10-22T10:58:30.903647204+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.5/249.5 kB 97.5 MB/s eta 0:00:00
+2026-10-22T10:58:31.150585061+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting pyarrow>=24.0.0
+2026-10-22T10:58:31.157245833+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/57/5c/f8fc0eb2de03464a557d5a4d0c15e972d73362414696618833b771f7eddd/pyarrow-25.0.1-cp310-cp310-manylinux_2_28_x86_64.whl (50.1 MB)
+2026-10-22T10:58:31.440678139+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 56.1 MB/s eta 0:00:00
+2026-10-22T10:58:31.495796006+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: fsspec[http]<=2026.7.0,>=2023.1.0 in /usr/local/lib/python3.10/site-packages (from datasets->-r /tmp/requirements.txt (line 3)) (2025.9.0)
+2026-10-22T10:58:31.539549112+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting dill<0.4.2,>=0.3.0
+2026-10-22T10:58:31.545299012+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/1e/77/dc8c558f7593132cf8fefec57c4f60c83b16941c574ac5f619abb3ae7933/dill-0.4.1-py3-none-any.whl (120 kB)
+2026-10-22T10:58:31.549053338+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.0/120.0 kB 60.3 MB/s eta 0:00:00
+2026-10-22T10:58:31.550566519+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: filelock in /usr/local/lib/python3.10/site-packages (from datasets->-r /tmp/requirements.txt (line 3)) (3.19.1)
+2026-10-22T10:58:33.338374362+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting aiohttp!=4.0.0a0,!=4.0.0a1
+2026-10-22T10:58:33.34533615+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/5d/38/01f5fc732d5373d6c099db0343279cd4e6607287d336bab6ff6ae9085a0d/aiohttp-3.14.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+2026-10-22T10:58:33.37864016+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 58.8 MB/s eta 0:00:00
+2026-10-22T10:58:33.576315368+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting hf-xet<2.0.0,>=1.6.0
+2026-10-22T10:58:33.582390758+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+2026-10-22T10:58:33.600646642+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 257.8 MB/s eta 0:00:00
+2026-10-22T10:58:33.642291163+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting click<9.0.0,>=8.4.2
+2026-10-22T10:58:33.647977767+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl (125 kB)
+2026-10-22T10:58:33.651688227+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 63.1 MB/s eta 0:00:00
+2026-10-22T10:58:33.678618683+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting httpx2<3,>=2.0.0
+2026-10-22T10:58:33.684597312+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/69/5a/469616aa8c2cbb0bb9dd67a3c18d07c01ab604cc0b236ee1c47d260c7f6e/httpx2-2.14.0-py3-none-any.whl (96 kB)
+2026-10-22T10:58:33.687900624+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.9/96.9 kB 52.2 MB/s eta 0:00:00
+2026-10-22T10:58:33.802130604+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting tomli>=1.1.0
+2026-10-22T10:58:33.818277474+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/60/3f/3e3f8fd0919249b0200c80fbc4f9a1e70be19f9883da71dfb7f8b9ab8aca/tomli-2.5.0-py3-none-any.whl (14 kB)
+2026-10-22T10:58:33.820976682+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.10/site-packages (from huggingface-hub<3.0,>=1.31.0->transformers->-r /tmp/requirements.txt (line 1)) (4.15.0)
+2026-10-22T10:58:33.949517641+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-nvtx-cu12==12.6.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.77)
+2026-10-22T10:58:33.950794683+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-curand-cu12==10.3.7.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (10.3.7.77)
+2026-10-22T10:58:33.951111202+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (3.1.3)
+2026-10-22T10:58:33.952265059+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cufft-cu12==11.3.0.4 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (11.3.0.4)
+2026-10-22T10:58:33.953488102+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cusolver-cu12==11.7.1.2 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (11.7.1.2)
+2026-10-22T10:58:33.954736029+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cusparse-cu12==12.5.4.2 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.5.4.2)
+2026-10-22T10:58:33.95584606+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cuda-cupti-cu12==12.6.80 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.80)
+2026-10-22T10:58:33.957340704+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cudnn-cu12==9.5.1.17 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (9.5.1.17)
+2026-10-22T10:58:33.957644281+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: networkx in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (3.3)
+2026-10-22T10:58:33.95892015+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: triton==3.2.0 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (3.2.0)
+2026-10-22T10:58:33.960021888+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cuda-runtime-cu12==12.6.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.77)
+2026-10-22T10:58:33.961425606+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-nvjitlink-cu12==12.6.85 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.85)
+2026-10-22T10:58:33.962650271+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cublas-cu12==12.6.4.1 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.4.1)
+2026-10-22T10:58:33.963541496+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (1.13.1)
+2026-10-22T10:58:33.964810083+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.6.77 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (12.6.77)
+2026-10-22T10:58:33.966054537+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-cusparselt-cu12==0.6.3 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (0.6.3)
+2026-10-22T10:58:33.967103629+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /usr/local/lib/python3.10/site-packages (from torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (2.21.5)
+2026-10-22T10:58:33.999906908+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.10/site-packages (from sympy==1.13.1->torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (1.3.0)
+2026-10-22T10:58:34.125874+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting python-dateutil>=2.8.2
+2026-10-22T10:58:34.131591384+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-10-22T10:58:34.13568605+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 101.8 MB/s eta 0:00:00
+2026-10-22T10:58:34.171648471+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting tzdata>=2022.7
+2026-10-22T10:58:34.177237344+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+2026-10-22T10:58:34.181630316+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.0/348.0 kB 132.1 MB/s eta 0:00:00
+2026-10-22T10:58:34.264828573+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting pytz>=2020.1
+2026-10-22T10:58:34.27069676+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/4f/ef/c66110d46fb800dda0bf33164182dfadabe26a90e4476844d502a23dca8e/pytz-2026.5-py2.py3-none-any.whl (506 kB)
+2026-10-22T10:58:34.275696965+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 506.3/506.3 kB 155.5 MB/s eta 0:00:00
+2026-10-22T10:58:34.352583746+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting shellingham>=1.3.0
+2026-10-22T10:58:34.358118896+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+2026-10-22T10:58:34.470618734+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting rich>=13.8.0
+2026-10-22T10:58:34.476652585+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl (310 kB)
+2026-10-22T10:58:34.481248073+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 116.3 MB/s eta 0:00:00
+2026-10-22T10:58:34.505920765+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting annotated-doc>=0.0.2
+2026-10-22T10:58:34.511556931+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+2026-10-22T10:58:34.71498995+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting frozenlist>=1.1.1
+2026-10-22T10:58:34.721465453+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/5d/ed/c7895fd2fde7f3ee70d248175f9b6cdf792fb741ab92dc59cd9ef3bd241b/frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+2026-10-22T10:58:34.725674688+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.5/219.5 kB 94.3 MB/s eta 0:00:00
+2026-10-22T10:58:35.565603123+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting yarl<2.0,>=1.25.1
+2026-10-22T10:58:35.572180442+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/28/b9/7818ac6dec7fbcd16be2d19495807c01e2c38834e57d41c63356a75e786b/yarl-1.25.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (118 kB)
+2026-10-22T10:58:35.579940394+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 kB 18.8 MB/s eta 0:00:00
+2026-10-22T10:58:35.607024567+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting async-timeout<6.0,>=4.0
+2026-10-22T10:58:35.612928036+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/fe/ba/e2081de779ca30d473f21f5b30e0e737c438205440784c7dfc81efc2b029/async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+2026-10-22T10:58:35.814478237+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting propcache>=0.2.0
+2026-10-22T10:58:35.821758717+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/f0/51/5adee15e12a7e314cece4543fbf295b0fe1b504dc78b32dff4c8eb1e29b0/propcache-0.5.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (224 kB)
+2026-10-22T10:58:35.82605964+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.3/224.3 kB 92.7 MB/s eta 0:00:00
+2026-10-22T10:58:36.602768902+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting multidict<8.0,>=4.5
+2026-10-22T10:58:36.609503422+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/5a/9c/598d765e98aa02ff7204b6f11cf790e5840f5e8252d7b1d955ed0043bb94/multidict-7.1.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (464 kB)
+2026-10-22T10:58:36.621986199+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 464.4/464.4 kB 43.4 MB/s eta 0:00:00
+2026-10-22T10:58:36.639630639+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting aiosignal>=1.4.0
+2026-10-22T10:58:36.645610545+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+2026-10-22T10:58:36.675410367+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting attrs>=17.3.0
+2026-10-22T10:58:36.681001033+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl (67 kB)
+2026-10-22T10:58:36.684272676+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 36.2 MB/s eta 0:00:00
+2026-10-22T10:58:36.716316642+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting aiohappyeyeballs>=2.5.0
+2026-10-22T10:58:36.721934655+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+2026-10-22T10:58:36.80056481+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting anyio>=4.10
+2026-10-22T10:58:36.806166291+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl (132 kB)
+2026-10-22T10:58:36.809931591+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 67.1 MB/s eta 0:00:00
+2026-10-22T10:58:36.844493289+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting idna>=3.18
+2026-10-22T10:58:36.849999365+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl (69 kB)
+2026-10-22T10:58:36.853234445+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 38.2 MB/s eta 0:00:00
+2026-10-22T10:58:36.885048841+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting httpcore2==2.14.0
+2026-10-22T10:58:36.891116159+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/02/06/a8d6a8f90d11b76d9086242b6bb0ee4b503473bfc8be34c2d5b067275c22/httpcore2-2.14.0-py3-none-any.whl (84 kB)
+2026-10-22T10:58:36.894356573+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.3/84.3 kB 45.9 MB/s eta 0:00:00
+2026-10-22T10:58:36.931892347+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting truststore>=0.10
+2026-10-22T10:58:36.937672428+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/51/e9/3a7820be2bb0fe53b6bc9c3be26d3d1158004e4c3ab953aa6840b955b1e9/truststore-0.10.5-py3-none-any.whl (19 kB)
+2026-10-22T10:58:36.97317619+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting h11>=0.16
+2026-10-22T10:58:36.978696533+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl (37 kB)
+2026-10-22T10:58:37.012538302+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting six>=1.5
+2026-10-22T10:58:37.018121597+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-10-22T10:58:37.071818575+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting markdown-it-py>=2.2.0
+2026-10-22T10:58:37.077399397+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-10-22T10:58:37.08076399+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.7/91.7 kB 49.0 MB/s eta 0:00:00
+2026-10-22T10:58:37.120727567+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting pygments<3.0.0,>=2.13.0
+2026-10-22T10:58:37.126321166+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-10-22T10:58:37.136648591+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 143.3 MB/s eta 0:00:00
+2026-10-22T10:58:37.162339899+08:00 dlc14bhlajtm7p5j-master-0 pytorch Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/site-packages (from jinja2->torch>=1.13.0->peft->-r /tmp/requirements.txt (line 2)) (2.1.5)
+2026-10-22T10:58:37.24134265+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting typing-extensions>=4.1.0
+2026-10-22T10:58:37.246992048+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-10-22T10:58:37.250117911+08:00 dlc14bhlajtm7p5j-master-0 pytorch      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 25.7 MB/s eta 0:00:00
+2026-10-22T10:58:37.285994229+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting exceptiongroup>=1.0.2
+2026-10-22T10:58:37.291594743+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/8a/0e/97c33bf5009bdbac74fd2beace167cab3f978feb69cc36f1ef79360d6c4e/exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+2026-10-22T10:58:37.372905685+08:00 dlc14bhlajtm7p5j-master-0 pytorch Collecting mdurl~=0.1
+2026-10-22T10:58:37.378424193+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Downloading http://mirrors.cloud.aliyuncs.com/pypi/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-10-22T10:58:38.366933327+08:00 dlc14bhlajtm7p5j-master-0 pytorch Installing collected packages: pytz, xxhash, tzdata, typing-extensions, truststore, tqdm, tomli, six, shellingham, safetensors, regex, pyyaml, pygments, pyarrow, psutil, propcache, packaging, mdurl, idna, hf-xet, h11, frozenlist, dill, click, attrs, async-timeout, annotated-doc, aiohappyeyeballs, python-dateutil, multiprocess, multidict, markdown-it-py, httpcore2, exceptiongroup, aiosignal, yarl, rich, pandas, anyio, typer, httpx2, aiohttp, huggingface-hub, tokenizers, datasets, accelerate, transformers, peft
+2026-10-22T10:58:38.546009589+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Attempting uninstall: typing-extensions
+2026-10-22T10:58:38.546553211+08:00 dlc14bhlajtm7p5j-master-0 pytorch     Found existing installation: typing_extensions 4.15.0
+2026-10-22T10:58:38.548566668+08:00 dlc14bhlajtm7p5j-master-0 pytorch     Uninstalling typing_extensions-4.15.0:
+2026-10-22T10:58:38.946721969+08:00 dlc14bhlajtm7p5j-master-0 pytorch       Successfully uninstalled typing_extensions-4.15.0
+2026-10-22T10:58:40.986683688+08:00 dlc14bhlajtm7p5j-master-0 pytorch   Attempting uninstall: idna
+2026-10-22T10:58:40.987384376+08:00 dlc14bhlajtm7p5j-master-0 pytorch     Found existing installation: idna 3.11
+2026-10-22T10:58:40.990278822+08:00 dlc14bhlajtm7p5j-master-0 pytorch     Uninstalling idna-3.11:
+2026-10-22T10:58:40.991039067+08:00 dlc14bhlajtm7p5j-master-0 pytorch       Successfully uninstalled idna-3.11
+2026-10-22T10:58:52.730614732+08:00 dlc14bhlajtm7p5j-master-0 pytorch Successfully installed accelerate-1.15.0 aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 annotated-doc-0.0.5 anyio-4.15.1 async-timeout-5.0.1 attrs-26.1.0 click-8.5.0 datasets-5.1.0 dill-0.4.1 exceptiongroup-1.3.1 frozenlist-1.8.0 h11-0.16.0 hf-xet-1.7.0 httpcore2-2.14.0 httpx2-2.14.0 huggingface-hub-2.2.0 idna-3.20 markdown-it-py-4.2.0 mdurl-0.1.2 multidict-7.1.0 multiprocess-0.70.19 packaging-26.3 pandas-2.3.3 peft-0.21.2 propcache-0.5.4 psutil-7.2.2 pyarrow-25.0.1 pygments-2.21.0 python-dateutil-2.9.0.post0 pytz-2026.5 pyyaml-6.0.3 regex-2026.9.29 rich-15.0.0 safetensors-0.8.0 shellingham-1.5.4 six-1.17.0 tokenizers-0.23.3 tomli-2.5.0 tqdm-4.70.1 transformers-5.20.2 truststore-0.10.5 typer-0.27.3 typing-extensions-4.16.0 tzdata-2026.5 xxhash-4.0.2 yarl-1.25.1
+2026-10-22T10:58:52.730840753+08:00 dlc14bhlajtm7p5j-master-0 pytorch WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-10-22T10:58:52.81741135+08:00 dlc14bhlajtm7p5j-master-0 pytorch 
+2026-10-22T10:58:52.817421839+08:00 dlc14bhlajtm7p5j-master-0 pytorch [notice] A new release of pip is available: 23.0.1 -> 26.2.2
+2026-10-22T10:58:52.817423449+08:00 dlc14bhlajtm7p5j-master-0 pytorch [notice] To update, run: pip install --upgrade pip
+2026-10-22T10:58:53.322287778+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== M0 =====
+2026-10-22T10:58:55.644609853+08:00 dlc14bhlajtm7p5j-master-0 pytorch 设备 cuda  精度 torch.float16  窗口 1024  批 8
+2026-10-22T10:58:55.644627813+08:00 dlc14bhlajtm7p5j-master-0 pytorch 语料 /mnt/data/exp1/data/raw/wikitext2_train_2m.txt
+Loading weights: 100%|██████████| 311/311 [00:01<00:00, 221.75it/s]
+Loading weights:   0%|          | 1/311 [00:01<07:10,  1.39s/it]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+2026-10-22T10:59:01.180575571+08:00 dlc14bhlajtm7p5j-master-0 pytorch 
+2026-10-22T10:59:01.575956189+08:00 dlc14bhlajtm7p5j-master-0 pytorch   模型加载 3.8 秒
+2026-10-22T10:59:06.960739973+08:00 dlc14bhlajtm7p5j-master-0 pytorch [transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2000000 > 131072). Running this sequence through the model will result in indexing errors
+2026-10-22T10:59:07.100543987+08:00 dlc14bhlajtm7p5j-master-0 pytorch   可用 2,000,000  使用 1,999,872  窗口 1,953  计分 token 1,997,919
+2026-10-22T10:59:15.749029814+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 24/245  窗口 192/1953  当前困惑度 25.0184  速度 22733 token/s  余 79 秒
+2026-10-22T10:59:24.183463233+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 48/245  窗口 384/1953  当前困惑度 24.1239  速度 23018 token/s  余 70 秒
+2026-10-22T10:59:32.690527193+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 72/245  窗口 576/1953  当前困惑度 24.7922  速度 23049 token/s  余 61 秒
+2026-10-22T10:59:41.209803961+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 96/245  窗口 768/1953  当前困惑度 24.5230  速度 23056 token/s  余 53 秒
+2026-10-22T10:59:49.792580729+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 120/245  窗口 960/1953  当前困惑度 24.5306  速度 23026 token/s  余 44 秒
+2026-10-22T10:59:58.421280983+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 144/245  窗口 1152/1953  当前困惑度 24.4223  速度 22986 token/s  余 36 秒
+2026-10-22T11:00:07.102189193+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 168/245  窗口 1344/1953  当前困惑度 24.3042  速度 22937 token/s  余 27 秒
+2026-10-22T11:00:15.83029308+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 192/245  窗口 1536/1953  当前困惑度 24.2342  速度 22885 token/s  余 19 秒
+2026-10-22T11:00:24.588446172+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 216/245  窗口 1728/1953  当前困惑度 24.2405  速度 22835 token/s  余 10 秒
+2026-10-22T11:00:33.387084293+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 240/245  窗口 1920/1953  当前困惑度 24.2843  速度 22785 token/s  余 1 秒
+2026-10-22T11:00:34.904931061+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 245/245  窗口 1953/1953  当前困惑度 24.3394  速度 22776 token/s  余 0 秒
+2026-10-22T11:00:35.851148887+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== 结果 =====
+2026-10-22T11:00:35.851154812+08:00 dlc14bhlajtm7p5j-master-0 pytorch   困惑度 24.3394  负对数似然 6377546.82  计分 token 1,997,919
+2026-10-22T11:00:35.85116048+08:00 dlc14bhlajtm7p5j-master-0 pytorch   用时 87.8 秒  速度 22776 token/s  显存峰值 4.02 GiB
+2026-10-22T11:00:35.851205843+08:00 dlc14bhlajtm7p5j-master-0 pytorch   已写出 /mnt/data/exp1/runs/P4-ppl/M0/ppl.json
+2026-10-22T11:00:36.537334849+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== M1 =====
+2026-10-22T11:00:37.870037094+08:00 dlc14bhlajtm7p5j-master-0 pytorch 设备 cuda  精度 torch.float16  窗口 1024  批 8
+2026-10-22T11:00:37.87006051+08:00 dlc14bhlajtm7p5j-master-0 pytorch 语料 /mnt/data/exp1/data/raw/wikitext2_train_2m.txt
+Loading weights: 100%|██████████| 310/310 [00:02<00:00, 104.07it/s]
+Loading weights:  96%|█████████▌| 297/310 [00:02<00:00, 130.15it/s]
+Loading weights:  83%|████████▎ | 257/310 [00:02<00:00, 232.73it/s]
+Loading weights:  63%|██████▎   | 196/310 [00:02<00:00, 196.35it/s]
+Loading weights:  33%|███▎      | 102/310 [00:01<00:02, 84.15it/s]
+Loading weights:  17%|█▋        | 52/310 [00:01<00:06, 41.28it/s]
+Loading weights:  12%|█▏        | 36/310 [00:01<00:08, 34.16it/s]
+Loading weights:   0%|          | 1/310 [00:01<06:42,  1.30s/it]
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]
+2026-10-22T11:00:44.562641717+08:00 dlc14bhlajtm7p5j-master-0 pytorch 
+2026-10-22T11:00:44.834317007+08:00 dlc14bhlajtm7p5j-master-0 pytorch   模型加载 5.3 秒
+2026-10-22T11:00:50.053291423+08:00 dlc14bhlajtm7p5j-master-0 pytorch [transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2000000 > 131072). Running this sequence through the model will result in indexing errors
+2026-10-22T11:00:50.192885627+08:00 dlc14bhlajtm7p5j-master-0 pytorch   可用 2,000,000  使用 1,999,872  窗口 1,953  计分 token 1,997,919
+2026-10-22T11:00:59.142593073+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 24/245  窗口 192/1953  当前困惑度 28.4573  速度 21968 token/s  余 82 秒
+2026-10-22T11:01:08.017167709+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 48/245  窗口 384/1953  当前困惑度 27.3601  速度 22061 token/s  余 73 秒
+2026-10-22T11:01:16.92543807+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 72/245  窗口 576/1953  当前困惑度 28.1451  速度 22064 token/s  余 64 秒
+2026-10-22T11:01:25.837415185+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 96/245  窗口 768/1953  当前困惑度 27.8644  速度 22063 token/s  余 55 秒
+2026-10-22T11:01:34.72854637+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 120/245  窗口 960/1953  当前困惑度 27.8643  速度 22073 token/s  余 46 秒
+2026-10-22T11:01:43.601684952+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 144/245  窗口 1152/1953  当前困惑度 27.7404  速度 22087 token/s  余 37 秒
+2026-10-22T11:01:52.465341882+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 168/245  窗口 1344/1953  当前困惑度 27.6177  速度 22101 token/s  余 28 秒
+2026-10-22T11:02:01.294714023+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 192/245  窗口 1536/1953  当前困惑度 27.5502  速度 22121 token/s  余 19 秒
+2026-10-22T11:02:10.106057547+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 216/245  窗口 1728/1953  当前困惑度 27.5533  速度 22142 token/s  余 10 秒
+2026-10-22T11:02:18.910174178+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 240/245  窗口 1920/1953  当前困惑度 27.6073  速度 22161 token/s  余 2 秒
+2026-10-22T11:02:20.423246629+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 245/245  窗口 1953/1953  当前困惑度 27.6733  速度 22164 token/s  余 0 秒
+2026-10-22T11:02:21.067160546+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== 结果 =====
+2026-10-22T11:02:21.067177975+08:00 dlc14bhlajtm7p5j-master-0 pytorch   困惑度 27.6733  负对数似然 6634029.61  计分 token 1,997,919
+2026-10-22T11:02:21.067180415+08:00 dlc14bhlajtm7p5j-master-0 pytorch   用时 90.2 秒  速度 22164 token/s  显存峰值 4.02 GiB
+2026-10-22T11:02:21.067203736+08:00 dlc14bhlajtm7p5j-master-0 pytorch   已写出 /mnt/data/exp1/runs/P4-ppl/M1/ppl.json
+2026-10-22T11:02:21.625488293+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== M2 =====
+2026-10-22T11:02:23.062292772+08:00 dlc14bhlajtm7p5j-master-0 pytorch 设备 cuda  精度 torch.float16  窗口 1024  批 8
+2026-10-22T11:02:23.062314942+08:00 dlc14bhlajtm7p5j-master-0 pytorch 语料 /mnt/data/exp1/data/raw/wikitext2_train_2m.txt
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1757.10it/s]
+Loading weights:  51%|█████     | 159/311 [00:00<00:00, 1583.16it/s]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+2026-10-22T11:02:25.976429987+08:00 dlc14bhlajtm7p5j-master-0 pytorch 
+2026-10-22T11:02:27.285424233+08:00 dlc14bhlajtm7p5j-master-0 pytorch   模型加载 2.5 秒
+2026-10-22T11:02:32.510420211+08:00 dlc14bhlajtm7p5j-master-0 pytorch [transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2000000 > 131072). Running this sequence through the model will result in indexing errors
+2026-10-22T11:02:32.65119448+08:00 dlc14bhlajtm7p5j-master-0 pytorch   可用 2,000,000  使用 1,999,872  窗口 1,953  计分 token 1,997,919
+2026-10-22T11:02:43.470831847+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 24/245  窗口 192/1953  当前困惑度 22.8732  速度 18172 token/s  余 99 秒
+2026-10-22T11:02:54.279830825+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 48/245  窗口 384/1953  当前困惑度 22.0887  速度 18180 token/s  余 88 秒
+2026-10-22T11:03:05.030871713+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 72/245  窗口 576/1953  当前困惑度 22.6849  速度 18216 token/s  余 77 秒
+2026-10-22T11:03:15.798118786+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 96/245  窗口 768/1953  当前困惑度 22.4292  速度 18227 token/s  余 67 秒
+2026-10-22T11:03:26.559373521+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 120/245  窗口 960/1953  当前困惑度 22.4370  速度 18235 token/s  余 56 秒
+2026-10-22T11:03:37.303045415+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 144/245  窗口 1152/1953  当前困惑度 22.3471  速度 18246 token/s  余 45 秒
+2026-10-22T11:03:48.01999907+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 168/245  窗口 1344/1953  当前困惑度 22.2406  速度 18260 token/s  余 34 秒
+2026-10-22T11:03:58.71586653+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 192/245  窗口 1536/1953  当前困惑度 22.1765  速度 18275 token/s  余 23 秒
+2026-10-22T11:04:09.399978192+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 216/245  窗口 1728/1953  当前困惑度 22.1839  速度 18289 token/s  余 13 秒
+2026-10-22T11:04:20.074613965+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 240/245  窗口 1920/1953  当前困惑度 22.2235  速度 18302 token/s  余 2 秒
+2026-10-22T11:04:21.911227626+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 245/245  窗口 1953/1953  当前困惑度 22.2737  速度 18304 token/s  余 0 秒
+2026-10-22T11:04:22.619854645+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== 结果 =====
+2026-10-22T11:04:22.619863844+08:00 dlc14bhlajtm7p5j-master-0 pytorch   困惑度 22.2737  负对数似然 6200354.74  计分 token 1,997,919
+2026-10-22T11:04:22.61986627+08:00 dlc14bhlajtm7p5j-master-0 pytorch   用时 109.3 秒  速度 18304 token/s  显存峰值 4.02 GiB
+2026-10-22T11:04:22.619918664+08:00 dlc14bhlajtm7p5j-master-0 pytorch   已写出 /mnt/data/exp1/runs/P4-ppl/M2/ppl.json
+2026-10-22T11:04:23.210106364+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== M3 =====
+2026-10-22T11:04:24.642256656+08:00 dlc14bhlajtm7p5j-master-0 pytorch 设备 cuda  精度 torch.float16  窗口 1024  批 8
+2026-10-22T11:04:24.642272555+08:00 dlc14bhlajtm7p5j-master-0 pytorch 语料 /mnt/data/exp1/data/raw/wikitext2_train_2m.txt
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1806.21it/s]
+Loading weights:  55%|█████▌    | 172/311 [00:00<00:00, 1719.79it/s]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+2026-10-22T11:04:27.587726869+08:00 dlc14bhlajtm7p5j-master-0 pytorch 
+2026-10-22T11:04:28.33000256+08:00 dlc14bhlajtm7p5j-master-0 pytorch   模型加载 2.0 秒
+2026-10-22T11:04:33.661139677+08:00 dlc14bhlajtm7p5j-master-0 pytorch [transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2000000 > 131072). Running this sequence through the model will result in indexing errors
+2026-10-22T11:04:33.802591018+08:00 dlc14bhlajtm7p5j-master-0 pytorch   可用 2,000,000  使用 1,999,872  窗口 1,953  计分 token 1,997,919
+2026-10-22T11:04:44.399183264+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 24/245  窗口 192/1953  当前困惑度 224.5692  速度 18554 token/s  余 97 秒
+2026-10-22T11:04:54.893910447+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 48/245  窗口 384/1953  当前困惑度 219.3264  速度 18644 token/s  余 86 秒
+2026-10-22T11:05:05.458992651+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 72/245  窗口 576/1953  当前困惑度 233.4336  速度 18632 token/s  余 76 秒
+2026-10-22T11:05:16.042173688+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 96/245  窗口 768/1953  当前困惑度 222.6245  速度 18618 token/s  余 65 秒
+2026-10-22T11:05:26.617221222+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 120/245  窗口 960/1953  当前困惑度 223.5654  速度 18613 token/s  余 55 秒
+2026-10-22T11:05:37.164726818+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 144/245  窗口 1152/1953  当前困惑度 223.2387  速度 18618 token/s  余 44 秒
+2026-10-22T11:05:47.690660792+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 168/245  窗口 1344/1953  当前困惑度 227.4785  速度 18626 token/s  余 33 秒
+2026-10-22T11:05:58.185164294+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 192/245  窗口 1536/1953  当前困惑度 232.1698  速度 18640 token/s  余 23 秒
+2026-10-22T11:06:08.664355419+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 216/245  窗口 1728/1953  当前困惑度 232.7530  速度 18653 token/s  余 12 秒
+2026-10-22T11:06:19.129097291+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 240/245  窗口 1920/1953  当前困惑度 228.8263  速度 18667 token/s  余 2 秒
+2026-10-22T11:06:20.930127537+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 245/245  窗口 1953/1953  当前困惑度 229.4287  速度 18668 token/s  余 0 秒
+2026-10-22T11:06:21.609277327+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== 结果 =====
+2026-10-22T11:06:21.609285885+08:00 dlc14bhlajtm7p5j-master-0 pytorch   困惑度 229.4287  负对数似然 10859872.97  计分 token 1,997,919
+2026-10-22T11:06:21.609291057+08:00 dlc14bhlajtm7p5j-master-0 pytorch   用时 107.1 秒  速度 18668 token/s  显存峰值 4.35 GiB
+2026-10-22T11:06:21.609313949+08:00 dlc14bhlajtm7p5j-master-0 pytorch   已写出 /mnt/data/exp1/runs/P4-ppl/M3/ppl.json
+2026-10-22T11:06:22.187963178+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== M4 =====
+2026-10-22T11:06:23.588685244+08:00 dlc14bhlajtm7p5j-master-0 pytorch 设备 cuda  精度 torch.float16  窗口 1024  批 8
+2026-10-22T11:06:23.588711361+08:00 dlc14bhlajtm7p5j-master-0 pytorch 语料 /mnt/data/exp1/data/raw/wikitext2_train_2m.txt
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1873.61it/s]
+Loading weights:  58%|█████▊    | 180/311 [00:00<00:00, 1750.05it/s]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+2026-10-22T11:06:26.502674288+08:00 dlc14bhlajtm7p5j-master-0 pytorch 
+2026-10-22T11:06:27.646072232+08:00 dlc14bhlajtm7p5j-master-0 pytorch   模型加载 2.4 秒
+2026-10-22T11:06:32.856389472+08:00 dlc14bhlajtm7p5j-master-0 pytorch [transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2000000 > 131072). Running this sequence through the model will result in indexing errors
+2026-10-22T11:06:32.995452482+08:00 dlc14bhlajtm7p5j-master-0 pytorch   可用 2,000,000  使用 1,999,872  窗口 1,953  计分 token 1,997,919
+2026-10-22T11:06:43.783005711+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 24/245  窗口 192/1953  当前困惑度 23.8334  速度 18226 token/s  余 99 秒
+2026-10-22T11:06:54.587830656+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 48/245  窗口 384/1953  当前困惑度 22.9833  速度 18211 token/s  余 88 秒
+2026-10-22T11:07:05.341972259+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 72/245  窗口 576/1953  当前困惑度 23.6117  速度 18235 token/s  余 77 秒
+2026-10-22T11:07:16.138168913+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 96/245  窗口 768/1953  当前困惑度 23.3489  速度 18229 token/s  余 67 秒
+2026-10-22T11:07:26.933991796+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 120/245  窗口 960/1953  当前困惑度 23.3598  速度 18225 token/s  余 56 秒
+2026-10-22T11:07:37.702471963+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 144/245  窗口 1152/1953  当前困惑度 23.2571  速度 18231 token/s  余 45 秒
+2026-10-22T11:07:48.438700112+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 168/245  窗口 1344/1953  当前困惑度 23.1431  速度 18242 token/s  余 34 秒
+2026-10-22T11:07:59.148257289+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 192/245  窗口 1536/1953  当前困惑度 23.0767  速度 18257 token/s  余 23 秒
+2026-10-22T11:08:09.843421741+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 216/245  窗口 1728/1953  当前困惑度 23.0839  速度 18271 token/s  余 13 秒
+2026-10-22T11:08:20.521464368+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 240/245  窗口 1920/1953  当前困惑度 23.1254  速度 18285 token/s  余 2 秒
+2026-10-22T11:08:22.358566772+08:00 dlc14bhlajtm7p5j-master-0 pytorch   批 245/245  窗口 1953/1953  当前困惑度 23.1775  速度 18287 token/s  余 0 秒
+2026-10-22T11:08:23.020297797+08:00 dlc14bhlajtm7p5j-master-0 pytorch ===== 结果 =====
+2026-10-22T11:08:23.020306851+08:00 dlc14bhlajtm7p5j-master-0 pytorch   困惑度 23.1775  负对数似然 6279819.81  计分 token 1,997,919
+2026-10-22T11:08:23.020312291+08:00 dlc14bhlajtm7p5j-master-0 pytorch   用时 109.4 秒  速度 18287 token/s  显存峰值 4.02 GiB
+2026-10-22T11:08:23.020369579+08:00 dlc14bhlajtm7p5j-master-0 pytorch   已写出 /mnt/data/exp1/runs/P4-ppl/M4/ppl.json
