@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{同批测试样本上的配对检验，差值为前者减后者}
+\label{tab:paired}
+\begin{tabular}{lSlSl}
+\toprule
+\multirow{2}{*}{对比} & \multicolumn{2}{c}{GSM8K} & \multicolumn{2}{c}{ARC-Challenge} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & {差值} & {Holm $p$} & {差值} & {Holm $p$} \\
+\midrule
+全参微调\ 相对\ 基座 & -8.95 & $<$0.0001 & 2.39 & 0.3319 \\
+LoRA 相对\ 基座 & -15.85 & $<$0.0001 & 5.29 & 0.0012 \\
+P-Tuning v2 相对\ 基座 & -21.91 & $<$0.0001 & -2.13 & 0.3319 \\
+自研方法\ 相对\ 基座 & -3.18 & 0.0166 & 3.41 & 0.0218 \\
+自研方法\ 相对\ LoRA & 12.66 & $<$0.0001 & -1.88 & 0.3357 \\
+自研方法\ 相对\ 全参微调 & 5.76 & 0.0003 & 1.02 & 0.5675 \\
+自研方法\ 相对\ P-Tuning v2 & 18.73 & $<$0.0001 & 5.55 & 0.0032 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{0.3em}\footnotesize 差值单位为百分点。$p$ 为 McNemar 精确检验双侧值，
+经同一数据集同一家族内的 Holm 校正。
+\end{minipage}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{五种方法在两个测试集上的准确率与 Wilson 区间}
+\label{tab:main}
+\begin{tabular}{lSlSl}
+\toprule
+\multirow{2}{*}{方法} & \multicolumn{2}{c}{GSM8K} & \multicolumn{2}{c}{ARC-Challenge} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & {准确率} & {95\% 区间} & {准确率} & {95\% 区间} \\
+\midrule
+基座 & 0.6020 & 0.5753--0.6281 & 0.5205 & 0.4919--0.5490 \\
+全参微调 & 0.5125 & 0.4855--0.5394 & 0.5444 & 0.5158--0.5727 \\
+LoRA & 0.4435 & 0.4169--0.4705 & 0.5734 & 0.5449--0.6014 \\
+P-Tuning v2 & 0.3829 & 0.3570--0.4094 & 0.4991 & 0.4706--0.5277 \\
+自研方法 & 0.5701 & 0.5432--0.5966 & 0.5546 & 0.5260--0.5828 \\
+\bottomrule
+\end{tabular}
+\end{table}

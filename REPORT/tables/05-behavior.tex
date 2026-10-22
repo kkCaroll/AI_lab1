@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{输出行为指标，截断与抽取失败均按样本计}
+\label{tab:behavior}
+\begin{tabular}{lSSSS}
+\toprule
+方法 & {GSM8K 均长} & {ARC 均长} & {ARC 截断率} & {ARC 抽取失败率} \\
+\midrule
+基座 & 208.4 & 12.7 & 0.0009 & 0.0000 \\
+全参微调 & 93.5 & 279.7 & 0.4514 & 0.0768 \\
+LoRA & 108.7 & 174.4 & 0.2696 & 0.0333 \\
+P-Tuning v2 & 110.0 & 26.3 & 0.0034 & 0.0904 \\
+自研方法 & 185.9 & 23.6 & 0.0000 & 0.0026 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{0.3em}\footnotesize 均长单位为 token。抽取失败率取 v3 口径。
+\end{minipage}
+\end{table}

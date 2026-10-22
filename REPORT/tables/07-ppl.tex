@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{五个模型在 WikiText-2 前二百万 token 上的困惑度}
+\label{tab:ppl}
+\begin{tabular}{lSS}
+\toprule
+方法 & {困惑度} & {相对基座} \\
+\midrule
+基座 & 24.34 & 1.000 \\
+全参微调 & 27.67 & 1.137 \\
+LoRA & 22.27 & 0.915 \\
+P-Tuning v2 & 229.43 & 9.426 \\
+自研方法 & 23.18 & 0.952 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\linewidth}
+\vspace{0.3em}\footnotesize P-Tuning v2 的前缀仅在对话模板格式的输入上训练，
+与无模板语料不匹配，其读数只作描述，不参与方法排序。
+\end{minipage}
+\end{table}
