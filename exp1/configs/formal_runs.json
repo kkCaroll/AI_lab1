@@ -1,0 +1,74 @@
+{
+  "methods": ["M0", "M1", "M2", "M3", "M4"],
+  "labels": {
+    "M0": "Base Model",
+    "M1": "Full SFT",
+    "M2": "LoRA",
+    "M3": "P-Tuning v2",
+    "M4": "自研方法"
+  },
+  "datasets": {
+    "gsm8k": {
+      "n": 1319,
+      "expected_correct": {
+        "M0": 794,
+        "M1": 676,
+        "M2": 585,
+        "M3": 505,
+        "M4": 752
+      }
+    },
+    "arc": {
+      "n": 1172,
+      "expected_correct": {
+        "M0": 610,
+        "M1": 638,
+        "M2": 672,
+        "M3": 585,
+        "M4": 650
+      }
+    }
+  },
+  "runs": {
+    "M0": {
+      "gsm8k": "runs/formal/M0/predictions_gsm8k.jsonl",
+      "arc": "runs/P2-6b/M0/M0-predictions_arc_v3.jsonl",
+      "metrics": {
+        "gsm8k": "runs/formal/M0/metrics_gsm8k.json",
+        "arc": "runs/P2-6b/M0/M0-predictions_arc_v3.metrics.json"
+      }
+    },
+    "M1": {
+      "gsm8k": "runs/formal/M1/predictions_gsm8k.jsonl",
+      "arc": "runs/P2-6b/M1/M1-predictions_arc_v3.jsonl",
+      "metrics": {
+        "gsm8k": "runs/formal/M1/metrics_gsm8k.json",
+        "arc": "runs/P2-6b/M1/M1-predictions_arc_v3.metrics.json"
+      }
+    },
+    "M2": {
+      "gsm8k": "runs/formal/M2/predictions_gsm8k.jsonl",
+      "arc": "runs/P2-6c/M2/M2-predictions_arc_v3.jsonl",
+      "metrics": {
+        "gsm8k": "runs/formal/M2/metrics_gsm8k.json",
+        "arc": "runs/P2-6c/M2/M2-predictions_arc_v3.metrics.json"
+      }
+    },
+    "M3": {
+      "gsm8k": "runs/formal/M3/predictions_gsm8k.jsonl",
+      "arc": "runs/P2-6c/M3/M3-predictions_arc_v3.jsonl",
+      "metrics": {
+        "gsm8k": "runs/formal/M3/metrics_gsm8k.json",
+        "arc": "runs/P2-6c/M3/M3-predictions_arc_v3.metrics.json"
+      }
+    },
+    "M4": {
+      "gsm8k": "runs/formal/M4/predictions_gsm8k.jsonl",
+      "arc": "runs/P3-3/M4-eval-f16/predictions_arc.jsonl",
+      "metrics": {
+        "gsm8k": "runs/formal/M4/metrics_gsm8k.json",
+        "arc": null
+      }
+    }
+  }
+}
