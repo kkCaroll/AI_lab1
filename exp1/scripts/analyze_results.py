@@ -329,7 +329,7 @@ def build_markdown(summary: dict, manifest: dict, generated_at: str) -> str:
         "- Holm 校正分两个家族，基线家族为四种微调方法各与 Base Model 比较，方法间家族为四种微调方法两两比较，每个数据集分别校正。",
         "- 截断率与抽取失败率只作描述，不作显著性推断。",
         "- ARC 一律取 v3 逐条预测，v2 严格口径不入本表。",
-        "- GSM8K 的抽取规则版本在 M0 至 M3 为 v2、M4 为 v3，v3 只改 ARC 级联，GSM8K 判对不受影响。",
+        "- 五种方法在 GSM8K 与 ARC 上均取 v3 抽取规则。",
         "",
     ]
     return "\n".join(lines)

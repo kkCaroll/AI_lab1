@@ -12,20 +12,20 @@
       "n": 1319,
       "expected_correct": {
         "M0": 794,
-        "M1": 676,
-        "M2": 585,
-        "M3": 505,
-        "M4": 752
+        "M1": 710,
+        "M2": 563,
+        "M3": 510,
+        "M4": 766
       }
     },
     "arc": {
       "n": 1172,
       "expected_correct": {
         "M0": 610,
-        "M1": 638,
-        "M2": 672,
-        "M3": 585,
-        "M4": 650
+        "M1": 662,
+        "M2": 671,
+        "M3": 607,
+        "M4": 652
       }
     }
   },
@@ -39,35 +39,35 @@
       }
     },
     "M1": {
-      "gsm8k": "runs/formal/M1/predictions_gsm8k.jsonl",
-      "arc": "runs/P2-6b/M1/M1-predictions_arc_v3.jsonl",
+      "gsm8k": "runs/P6-1/M1/eval/predictions_gsm8k.jsonl",
+      "arc": "runs/P6-1/M1/eval/predictions_arc_v3.jsonl",
       "metrics": {
-        "gsm8k": "runs/formal/M1/metrics_gsm8k.json",
-        "arc": "runs/P2-6b/M1/M1-predictions_arc_v3.metrics.json"
+        "gsm8k": "runs/P6-1/M1/eval/metrics_gsm8k.json",
+        "arc": "runs/P6-1/M1/eval/predictions_arc_v3.metrics.json"
       }
     },
     "M2": {
-      "gsm8k": "runs/formal/M2/predictions_gsm8k.jsonl",
-      "arc": "runs/P2-6c/M2/M2-predictions_arc_v3.jsonl",
+      "gsm8k": "runs/P6-1/M2/eval/predictions_gsm8k.jsonl",
+      "arc": "runs/P6-1/M2/eval/predictions_arc_v3.jsonl",
       "metrics": {
-        "gsm8k": "runs/formal/M2/metrics_gsm8k.json",
-        "arc": "runs/P2-6c/M2/M2-predictions_arc_v3.metrics.json"
+        "gsm8k": "runs/P6-1/M2/eval/metrics_gsm8k.json",
+        "arc": "runs/P6-1/M2/eval/predictions_arc_v3.metrics.json"
       }
     },
     "M3": {
-      "gsm8k": "runs/formal/M3/predictions_gsm8k.jsonl",
-      "arc": "runs/P2-6c/M3/M3-predictions_arc_v3.jsonl",
+      "gsm8k": "runs/P6-1/M3/eval/predictions_gsm8k.jsonl",
+      "arc": "runs/P6-1/M3/eval/predictions_arc_v3.jsonl",
       "metrics": {
-        "gsm8k": "runs/formal/M3/metrics_gsm8k.json",
-        "arc": "runs/P2-6c/M3/M3-predictions_arc_v3.metrics.json"
+        "gsm8k": "runs/P6-1/M3/eval/metrics_gsm8k.json",
+        "arc": "runs/P6-1/M3/eval/predictions_arc_v3.metrics.json"
       }
     },
     "M4": {
-      "gsm8k": "runs/formal/M4/predictions_gsm8k.jsonl",
-      "arc": "runs/P3-3/M4-eval-f16/predictions_arc.jsonl",
+      "gsm8k": "runs/P6-1/M4/eval/predictions_gsm8k.jsonl",
+      "arc": "runs/P6-1/M4/eval/predictions_arc_v3.jsonl",
       "metrics": {
-        "gsm8k": "runs/formal/M4/metrics_gsm8k.json",
-        "arc": null
+        "gsm8k": "runs/P6-1/M4/eval/metrics_gsm8k.json",
+        "arc": "runs/P6-1/M4/eval/predictions_arc_v3.metrics.json"
       }
     }
   }
