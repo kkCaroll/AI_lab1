@@ -1,29 +1,34 @@
-"""P1.5 开发集划分脚本。
+"""开发集划分脚本。
 
-从 GSM8K 训练集以固定种子划出 400 条作为开发集，只记索引，不复制样本。开发集供
-P2 选择学习率与训练轮数，不取测试集，以免测试集信息经选择过程泄漏进模型。
+从 GSM8K 训练集以固定种子划出开发集，只记索引，不复制样本。开发集供选择学习率、
+轮数与正则系数，不取测试集，以免测试集信息经选择过程泄漏进模型。
 
-原始文件不改动，正式训练集由 src/data.py 的 load_train_split 按索引剔除得到 7073
-条。索引文件同时记下源文件的 SHA256，供载入端核对索引与源文件是否仍然对齐。
+原始文件不改动，正式训练集由 src/data.py 的 load_train_split 按索引剔除。索引文件
+同时记下源文件的 SHA256，供载入端核对索引与源文件是否仍然对齐。
 
-本脚本只在本机运行一次，产物 exp1/configs/dev_split.json 入仓库，容器内不再执行，
-故直接复用 src/utils.py 的报告机制而不另写一份。
+2026-11-11 按课程要求改为 9 比 1，开发集 747 条。为不使已选定的超参失效，取扩展
+而非重抽，即保留原 400 条索引，再从未入选的样本中补抽 347 条，使旧开发集始终不进入
+训练。记录中的 previous_dev_size 与 kept_count 两项留作审计。
+
+本脚本只在本机运行，产物 exp1/configs/dev_split.json 入仓库，容器内不再执行，故
+直接复用 src/utils.py 的报告机制而不另写一份。
 
 用法示例
     cd exp1
-    python -m scripts.make_dev_split --data-dir ../data/raw
+    python -m scripts.make_dev_split --data-dir ../data/raw --extend-from configs/dev_split.json
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import random
 from pathlib import Path
 
 from src.utils import FAIL, OK, report, section, sha256_of, summarize, write_json
 
 SEED = 42
-DEV_SIZE = 400
+DEV_SIZE = 747
 SOURCE_FILE = "gsm8k_train.jsonl"
 EXPECTED_TOTAL = 7473
 PREVIEW = 8
@@ -35,6 +40,11 @@ def main() -> int:
     parser.add_argument("--output", default="configs/dev_split.json", help="索引文件写出位置")
     parser.add_argument("--seed", type=int, default=SEED, help="划分所用随机种子")
     parser.add_argument("--dev-size", type=int, default=DEV_SIZE, help="开发集条数")
+    parser.add_argument(
+        "--extend-from",
+        default=None,
+        help="在已有索引文件基础上扩抽，保留其全部索引，只补足差额",
+    )
     args = parser.parse_args()
 
     checks = []
@@ -58,7 +68,24 @@ def main() -> int:
 
     # 用 random.Random 的独立实例，不用 datasets 的 shuffle，令划分只依赖种子与
     # Python 版本，不依赖第三方库的行为。索引排序后写出，使文件内容与 diff 稳定。
-    indices = sorted(random.Random(args.seed).sample(range(total), args.dev_size))
+    rng = random.Random(args.seed)
+    kept: list[int] = []
+    if args.extend_from:
+        previous = json.loads(Path(args.extend_from).read_text(encoding="utf-8"))
+        if previous.get("source_sha256") != checksum:
+            report(checks, "原索引与源文件一致", FAIL, "校验和不同")
+            return summarize(checks)
+        kept = list(previous["indices"])
+        if len(kept) != previous.get("dev_size") or len(set(kept)) != len(kept):
+            report(checks, "原索引自洽", FAIL, f"{len(kept)} 条")
+            return summarize(checks)
+        if not 0 < len(kept) < args.dev_size:
+            report(checks, "扩抽额度", FAIL, f"原 {len(kept)} 条，目标 {args.dev_size} 条")
+            return summarize(checks)
+        report(checks, "原索引可复用", OK, f"{len(kept)} 条")
+
+    pool = [i for i in range(total) if i not in set(kept)]
+    indices = sorted(kept + rng.sample(pool, args.dev_size - len(kept)))
     report(checks, "开发集规模", OK, f"{args.dev_size} 条")
 
     section("写出")
@@ -71,6 +98,8 @@ def main() -> int:
         "total": total,
         "dev_size": args.dev_size,
         "train_size": total - args.dev_size,
+        "previous_dev_size": len(kept) if args.extend_from else None,
+        "kept_count": len(kept),
         "indices": indices,
     }
     output = Path(args.output)

@@ -66,7 +66,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--adapter", default=None, help="PEFT 适配器目录，基座评测时留空")
     parser.add_argument("--dataset", default="gsm8k,arc", help="逗号分隔，取 gsm8k 与 arc")
     parser.add_argument("--data-dir", default="../data/raw", help="原始 jsonl 目录")
-    parser.add_argument("--split", default="test", choices=["test", "dev"], help="dev 只对 gsm8k 成立，取训练集划出的 400 条开发集")
+    parser.add_argument("--split", default="test", choices=["test", "dev"], help="dev 只对 gsm8k 成立，取训练集划出的 747 条开发集")
     parser.add_argument("--output-dir", required=True, help="运行目录，五类产物写于此")
     parser.add_argument("--batch-size", type=int, default=None, help="留空则按数据集取默认值")
     parser.add_argument("--max-new-tokens", type=int, default=None, help="留空则按数据集取默认值")
