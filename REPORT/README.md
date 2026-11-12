@@ -40,7 +40,7 @@ cd exp1
 python -m scripts.export_tables
 ```
 
-脚本读取 `exp1/runs/analysis/summary.json`、`exp1/runs/P4-ppl/*/ppl.json` 与 `运行输出日志/P3/` 的五份任务日志，只做取位与排版，不改数值。表一、表二与表八为人工记录，直接在正文中排版，数值取自 `RECORD/01-实验配置.md` 与 `RECORD/00-结果表.md`。
+脚本读取 `exp1/runs/analysis/summary.json`、`exp1/runs/P6-2-ppl/*/ppl.json` 与 `运行输出日志/P3/` 的五份任务日志，只做取位与排版，不改数值。表一、表二与表八为人工记录，直接在正文中排版，数值取自 `RECORD/01-实验配置.md` 与 `RECORD/00-结果表.md`。
 
 ## 目录
 

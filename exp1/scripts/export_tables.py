@@ -1,6 +1,6 @@
 """由统计产物生成报告所需的表格片段与矢量图。
 
-表三至表七与三幅图取自 `runs/analysis/summary.json`、`runs/P4-ppl/*/ppl.json`
+表三至表七与三幅图取自 `runs/analysis/summary.json`、`runs/P6-2-ppl/*/ppl.json`
 与 `运行输出日志/P3/` 的五份任务日志。脚本只做取位与排版，不改数值；缺文件或
 读数与预期不符即非零退出，不写半套产物。
 
@@ -417,7 +417,7 @@ def figure_behavior(datasets: dict, path: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="生成报告的表格与图")
     parser.add_argument("--summary", default=str(EXP1_ROOT / "runs/analysis/summary.json"))
-    parser.add_argument("--ppl-root", default=str(EXP1_ROOT / "runs/P4-ppl"))
+    parser.add_argument("--ppl-root", default=str(EXP1_ROOT / "runs/P6-2-ppl"))
     parser.add_argument("--p3-logs", default=str(REPO_ROOT / "运行输出日志/P3"))
     parser.add_argument("--out-dir", default=str(REPO_ROOT / "REPORT/tables"))
     parser.add_argument("--fig-dir", default=str(REPO_ROOT / "REPORT/figures"))
